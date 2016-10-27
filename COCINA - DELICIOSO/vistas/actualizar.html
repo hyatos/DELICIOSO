@@ -1,0 +1,63 @@
+<div class="modificar-cuadro">
+
+							<div class="opciones-cuadro centrado ">
+						
+								<div class="nombre "> <p class="blanco"> S O C I O S | Actualizar  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro orden" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Socio::modificar" method="post">
+								
+								<div>
+								<div>
+								<label class="label"> Nombre </label> <br>
+								<input type="text" name="nombre" placeholder="Juan" title="Ingresa solo un <nombre> y solo usa letras." pattern="^[a-zA-Z|\s]+$" value="{nombre}" required>
+								</div>
+
+								<div>
+								<label class="label"> Apellido </label> <br>
+								<input type="text" name="apellido" placeholder="Gastein" title="Ingresa un <apellido> valido y solo usa letras." pattern="^[a-zA-Z|\s]+$" value="{apellido}" required>
+								</div>
+
+								<div>
+								<label class="label"> Cuil </label> <br>
+								<input type="number" name="cuil" placeholder="20357899878" title="Ingresa un <cuil> valido, respeta la longitud de 11 caracteres." value="{cuil}" required>
+								</div>
+
+								<div>
+								<label class="label"> Fecha Nacimiento </label> <br>
+								<input type="date" name="fecha" value="{fecha}" >
+								</div>
+								</div>
+								
+								<div>
+								<div>
+								<label class="label"> Mail </label> <br>
+								<input type="text" name="mail" placeholder="example@example.com" title="Ingresa una direccion valida:  example@dominio.com !" value="{mail}" required>
+								</div>
+
+								<div>
+								<label class="label"> Telefono fijo </label> <br>
+								<input type="number" name="fijo" placeholder="0383 4556687" value="{fijo}">
+								</div>
+
+								<div>
+								<label class="label"> Telefono movil </label> <br>
+								<input type="number" name="movil" placeholder="154000001" value="{movil}" required>
+								</div>
+								</div>
+
+									<div>
+										<input id="add-socio" type="submit" value="Actualizar Datos" name="actualizar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="index.php?action=Login::atras"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+						</div>
+</div>
+						

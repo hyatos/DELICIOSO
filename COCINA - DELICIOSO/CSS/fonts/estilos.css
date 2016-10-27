@@ -1,0 +1,1577 @@
+*{    /* reseteo todos los valores por defecto*/
+	margin: 0;
+	padding: 0;
+}
+
+
+.icon-login
+{
+	color: #ecf0f1;
+}
+
+
+
+
+/*----------------------------------------------  CABECERA DE PAGINA -------------------------------------------------*/
+
+header
+{
+	display: flex;
+	background-color:black; /* #3498db;*//* #f1c40f; /*#c0392b; /*#bdc3c7; /*#e74c3c;*/
+	border-bottom: 1px solid #222;
+	height: 65px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-decoration: none;
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 3;
+	width: 100%;
+}
+
+header p
+{
+	font-size: 30px;
+	font-family: Nokia Standard;
+	color: rgba(192, 57, 43,1.0);
+}
+
+header nav
+{
+	width: 50%;
+	display: flex;   /*Esto lo hace padre de los elementos a*/
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: Segoe UI;
+}
+
+
+
+ a {
+	text-decoration: none;
+	}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	margin: 7px -2px;
+}
+
+header nav a{
+	text-decoration: none;
+	color: white;
+	padding: 19px 10px;
+}
+
+li:nth-of-type(1) a:hover{
+	border-bottom: 3px solid #2ecc71;
+}
+
+li:nth-of-type(2) a:hover{
+	border-bottom: 3px solid #3498db;
+}
+
+li:nth-of-type(3) a:hover{
+	border-bottom: 3px solid #e74c3c;
+}
+
+li:nth-of-type(4) a:hover{
+	border-bottom: 3px solid #9b59b6;
+}
+
+li:nth-of-type(5) a:hover{
+	border-bottom: 3px solid #f1c40f;
+}
+
+
+.isologotipo
+{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+}
+
+.header-boton-busqueda {
+    display: block;
+    height: 65px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+/* A TERMINAR  BOTON DE BUSQUEDA PERSOALIZADO*/
+
+
+.buscador
+{
+	height: 30px;
+	text-align: center;
+	background-color: #2D2D2D; 
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.7);
+	/*border-radius: 50px;*/
+	border: none;
+	border-bottom: 1px solid #858585;
+	box-sizing: border-box;
+}
+
+.buscador:focus{
+	background: #2D2D2D;
+	box-shadow: none;
+}
+
+
+
+/*----------------------------------------------  PIE DE PAGINA -------------------------------------------------*/
+
+footer
+{
+	background: #2D2D2D;
+	height: 200px;
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.55);
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: auto;
+	color: rgba(236, 240, 241,1.0);
+	font-size: 15px;
+	font-family: Segoe UI;
+
+}
+
+footer a{
+	text-decoration: none;
+	color: rgba(236, 240, 241,1.0);
+	font-size: 12px;
+	padding-top: 150px;
+    padding-left: 10px;
+   /* font-family: Segoe UI;*/
+    font-family:  Nokia Standard;
+}
+
+#enlaces{
+	width: 50%;
+}
+
+#redes{
+	width: 50%;
+}
+
+#firma{
+	width: 80%;
+	font-family:  Nokia Standard;
+}
+
+/*----------------------------------------------  CONTENEDOR INDEX -------------------------------------------------*/
+
+.contenedor
+{
+	display: flex;
+	margin: auto;
+	width: 100%;
+	height:100%;
+	max-height: 2500px;
+	max-width: 1500px;
+	flex-direction: column;
+		/*background-image: url("fondo2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	/*padding: 20px;*/
+
+}
+
+body
+{
+	background-color:  #222; /*#3498db; /*#bdc3c7; /*#2c3e50;*/
+	margin: auto;
+}
+
+
+
+/*----------------------------------------- --------   BASE  ------- -------------------------------------------------*/
+
+
+/*#base
+{
+	width: 1200px;
+	margin: auto;
+	min-height: 450px;
+	background:#2D2D2D;
+}*/
+
+
+
+/*----------------------------------------------  CONTENIDOS - Menu inicial -------------------------------------------------*/
+
+
+
+
+
+.contenedor2{    /* AQUI VAN TODAS LAS IMAGENES POR CATEGORIA*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+	width: 1210px;
+	margin: auto;
+}
+
+
+
+
+#imagen{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/futbol600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+
+}
+
+#info{
+	height:450px;
+	width: 600px;
+    background-color: rgba(231, 76, 60,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+}
+
+#imagen:hover #info{
+	transition: .3s linear;
+    opacity: 1;
+
+}
+
+#iii{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100px;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+#info a{
+	text-decoration: none;
+	color: rgba(236, 240, 241,1.0);
+	font-size: 30px;
+	padding-top: 150px;
+    padding-left: 10px;
+    font-family: Segoe UI;
+}
+
+
+
+
+
+#imagen2{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/nat600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+}
+
+#info2{
+	height:450px;
+	width: 600px;
+    background-color: rgba(241, 196, 15,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen2:hover #info2{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+#info2 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+	padding-left: 10px;
+	font-family: Segoe UI;
+}
+
+
+
+
+
+#imagen3{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/artemarcial600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+
+}
+
+#info3{
+	height:450px;
+	width: 600px;
+    background-color: rgba(155, 89, 182,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen3:hover #info3{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+
+#info3 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+	padding-left: 10px;
+	font-family: Segoe UI;
+}
+
+
+
+
+
+#imagen4{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/mtb600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+
+}
+
+#info4{
+	height:450px;
+	width: 600px;
+    background-color: rgba(52, 152, 219,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen4:hover #info4{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+
+#info4 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+    padding-left: 10px;
+    font-family: Segoe UI;
+}
+
+
+
+
+#imagen5{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/tenis600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+
+}
+
+#info5{
+	height:450px;
+	width: 600px;
+    background-color: rgba(46, 204, 113,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen5:hover #info5{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+
+#info5 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+    padding-left: 10px;
+    font-family: Segoe UI;
+}
+
+
+
+
+#imagen6{
+	height:450px;
+	width: 600px;
+	background-image: url("../imagenes/voley600-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+
+}
+
+#info6{
+	height:450px;
+	width: 600px;
+    background-color: rgba(231, 76, 60,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen6:hover #info6{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+
+#info6 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+    padding-left: 10px;
+    font-family: Segoe UI;
+}
+
+
+
+
+#imagen7{
+	margin: auto;
+	height:450px;
+	width: 1200px;
+	background-image: url("../imagenes/bascket1200-450.jpg");
+	box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+#info7{
+	height:450px;
+	width: 1200px;
+    background-color: rgba(26, 188, 156,0.8);
+	opacity: 0;
+
+	color: white;
+	font-size: 20px;
+
+}
+
+#imagen7:hover #info7{
+	transition: .3s linear;
+    opacity: 1;
+}
+
+
+
+#info7 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-top: 150px;
+    padding-left: 10px;
+    font-family: Segoe UI;
+}
+
+
+
+
+
+/*----------------------------------------------  CONTENIDOS - registro y logueo -------------------------------------------------*/
+
+
+.registro{
+	margin: auto;
+	display: flex;
+	width: 1200px;
+	height: 650px;
+	max-height: 2000px;
+	background:#ecf0f1;
+	flex-direction:column;
+	border-bottom: 3px solid #c0392b;
+}
+
+.registro-especial
+{
+	margin: auto;
+	display: flex;
+	width: 1200px;
+	
+	max-height: 2000px;
+	background:#ecf0f1;
+	flex-direction:column;
+	border-bottom: 3px solid #c0392b;	
+}
+
+.registro-titulo{
+	height: 60px;
+	max-width: 1200px;
+	text-align: right;
+	width: 100%;
+	background: #2D2D2D;
+	/*border: 1px solid red;*/
+	color: #ecf0f1;
+	border-bottom: 2px solid #c0392b;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 8;
+	
+}
+
+.sub-registro{
+	padding-bottom: 10px;
+	margin-right: 50px;
+	margin-top: 12px;
+	font-family: Nokia Standard;
+	font-size: 30px;
+}
+
+#campos-registro{
+	font-family: Segoe UI;
+	padding: 50px 100px;
+	display: flex;
+	margin: auto;
+	items-align: center;
+	justify-content: center;
+	width: 500px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+#campos-registro-editado{
+	font-family: Aaux ProLight;
+	color: #c0392b;
+	display: flex;
+	margin: auto;
+	items-align: center;
+	justify-content: center;
+	width: 500px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+
+}
+
+
+.espaciado{
+	margin-top: 6px;
+	margin-bottom: 6px;
+
+}
+
+.boton
+{
+	margin-top: 10px;
+	padding-right: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.leyenda{
+	color: #455A64;
+	margin-top: 30px;
+}
+
+.espaciado input {
+ padding: 5px 10px;
+ font-family: Nokia Standard;
+ font-size: 15px;
+}
+
+.espaciado [type="submit"]{
+	items-align: right;
+}
+
+.submit {
+	font-family: Ubuntu;
+	font-size: 25px;
+	padding: 2px 5px;
+}
+
+/* ...............................................*/
+#loading
+{
+background-color: #bd4932;
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 25;
+0px;
+top: 0px;
+left: 0px;
+visibility: visible;
+}
+
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+
+#object{
+	width: 80px;
+	height: 80px;
+	background-color: #FFF;
+	-webkit-animation: animate 1s infinite ease-in-out;
+	animation: animate 1s infinite ease-in-out;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+@-webkit-keyframes animate {
+  0% { -webkit-transform: perspective(160px); }
+  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes animate {
+  0% { 
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+
+
+
+
+/*----------------------------------------------  CONTENIDOS - categorias   -------------------------------------------------*/
+
+
+#categorias{
+	display: flex;
+	width: 100%;
+	margin: auto;
+}
+
+#buscar-categorias{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	height: 65px;
+	font-family: nokia Standard;
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0px 10px 0px 25px;
+	background: #ecf0f1;
+	border-radius: 50px;
+	border-bottom: 1px solid #95a5a6;
+	border: none;
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
+}
+
+
+#buscar-categorias:focus
+{
+	box-shadow: none;
+	background: #ecf0f1;
+	color: #e74c3c;
+}
+
+.margen
+{
+	margin-top: 100px;
+}
+
+
+.alinear{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+
+div#categorias nav
+{
+	display: flex;
+	/*align-items: center;*/
+	/*width: 60%;*/
+	margin-top: 50px;
+	margin: auto;
+}
+
+div#categorias nav a 
+{
+	width: 120px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-family: Segoe UI;
+	font-size: 20px;
+	background: #c0392b;
+	padding: 10px;
+	flex-grow: 1;
+
+	transition: all .2s ease-in-out;
+}
+
+div#categorias nav a:hover
+{
+	background: #e74c3c;
+	transform: scale(1.1);
+	color: #ecf0f1;
+}
+
+/*----------------------------------------------  CONTENIDOS - muestrario y elementos -------------------------------------------------*/
+
+
+.elementos-grilla
+{
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	padding: 40px 0px;
+}
+
+
+.elemento{
+	width: 300px;
+	height: 400px;
+	border: 1px solid #7f8c8d;
+	margin-top: 20px;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+	transition: all .2s ease-in-out; 
+}
+
+.elemento:hover{
+	transform: scale(1.1);
+}
+
+.imagen-elemento
+{
+	height: 75%;
+	max-height: 300px;
+	background: #7f8c8d;
+	border: 1px solid #7f8c8d;
+}
+
+.texto-elemento
+{
+	background: #7f8c8d;
+	height: 25%;
+	height: 100px;
+	border: 1px solid #7f8c8d;
+}
+
+.margenes
+{
+	padding: 10px 10px;
+}
+
+.etiqueta-elemento 
+{
+	font-family: Segoe UI;
+	font-size: 15px;
+}
+
+.etiqueta-elemento-modelo 
+{
+	font-family: Segoe UI;
+	font-size: 12px;
+	color: #ecf0f1;
+}
+
+.precio
+{
+	font-family: Nokia Standard;
+	font-size: 25px;
+	color: green;
+	width: 45%;
+}
+
+.margen2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.carrito-add
+{
+	width: 100px;
+	height: 35px;
+	background: #95a5a6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	padding-left: 5px;
+	padding-right:5px;
+	right: 0;
+
+}
+
+.texto-boton
+{
+
+
+	width   :100px;
+	background  : none;
+	cursor  : pointer;
+	font-family : Aaux ProLight;
+	font-size   : 16px;
+	color   : #fff;
+	border: none;
+	margin      : 0px;
+	padding     : 0px;
+}
+
+.link
+{
+	color: white;
+	font-family: Segoe UI;
+	font-size: 17px;
+}
+
+
+.carrito-add:hover
+{
+	background: #e74c3c;
+	transition: 0.6s linear ;
+}
+
+/*Ventana Modal*/
+
+.ventana-modal
+{
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	max-height: 1500px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	visibility: visible;
+}
+
+.ventana-opciones
+{
+	width: 600px;
+	height: 150px;
+	background: #ecf0f1;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.scroll
+{
+	overflow:scroll;
+}
+
+.mensaje
+{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.opciones-modal
+{
+	margin-top: 35px;
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+}
+
+.link-modal
+{
+	padding-left: 60px;
+	color: #d35400;
+}
+
+.link2-modal 
+{
+   margin-left: 50px;
+   color: #d35400;
+}
+
+.link3-modal
+{
+	margin-left: 50px;
+    color: #d35400;	
+}
+
+
+.icon-cross
+{
+	font-size: 30px;
+	color: #c0392b;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+
+/*----------------------------------------------  CONTENIDOS - INFORMACION -------------------------------------------------*/
+
+.modulo-1
+{
+	width: 100%;
+	height: 380px;
+	background: #FF9800; 
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 6;
+	display: flex;
+	flex-direction: row;
+}
+
+.modulo-2
+{
+	width: 100%;
+	height: 380px;
+	background: #EF5350;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 5;
+		display: flex;
+	flex-direction: row;
+}
+
+.modulo-3
+{
+	width: 100%;
+	height: 380px;
+	background: #5C6BC0;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 4;
+		display: flex;
+	flex-direction: row;
+}
+
+.modulo-4
+{
+	width: 1200px;
+	height: 380px;
+	background: #26C6DA;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 3;
+		display: flex;
+	flex-direction: row;
+}
+
+.modulo-5
+{
+	width: 100%;
+	height: 380px;
+	background: #9CCC65;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+		display: flex;
+	flex-direction: row;
+}
+
+
+.titular-funcionamiento
+{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+.imagen-titular-funcionamiento
+{
+	/*padding-top: 100px;*/
+
+	padding-left: 150px;
+}
+
+#globo
+{
+	padding-left: 100px;
+}
+
+.modulo-2-imagenes
+{
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+	width: 300px;
+}
+
+.p1,.p2, .p3, .p4
+{
+	font-family: Ubuntu;
+	font-size: 80px;
+	color: white;
+}
+
+.p2
+{
+	font-size: 70px;
+}
+
+.p3
+{
+	font-family: nokia Standard;
+	color: #EF5350;
+}
+
+.p4
+{
+	font-size: 270px;
+	align-items: center;
+}
+
+
+.carrito{
+	margin-left: 50px;
+}
+
+.modulo5
+{
+	width: 100%;
+}
+
+
+.titular-ancho
+{
+	width: 80%;
+	margin: auto;
+}
+
+.extra
+{
+	margin-top: 100px;
+}
+
+/*----------------------------------------------  CONTENIDOS - LOGUEADO -------------------------------------------------*/
+
+.logueo-titulo
+{
+	height: 60px;
+	max-width: 1200px;
+	text-align: right;
+	width: 100%;
+	background: #2D2D2D;
+	color: #ecf0f1;
+	border-bottom: 2px solid #c0392b;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	z-index: 8;
+
+	display: flex;
+	flex-direction: row;
+
+}
+
+.icon-creative-commons-attribution, .icon-chevron-left
+{
+	font-size: 35px;
+}
+
+
+
+.saludo
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.saludo p 
+{
+	font-family: Ubuntu;
+	font-size: 35px;
+	text-align: left;
+}
+
+.botones-logueado
+{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	justify-content: flex-end;
+	padding-right: 15px;
+}
+
+
+.botones-logueado a span
+{
+	color: #ecf0f1;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.icon-log-out:hover
+{
+	color: #e74c3c; 
+}
+
+/*.icon-cog:hover
+{
+
+	color: #f1c40f;
+}*/
+
+
+.menu-main
+{
+	
+	min-height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.opciones
+{
+	width: 40%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	
+}
+
+
+.numeros
+{
+	width: 40%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.ver
+{
+	width: 150px;
+	height: 40px;
+	background: #bdc3c7;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	flex-direction: row;
+}
+
+.ver:hover
+{
+	background: #c0392b;
+}
+
+.ver a 
+{
+	color: black;
+	font-family: Aaux ProLight;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+
+
+.ver a:hover
+{
+	color: #ecf0f1;
+}
+
+.fuente
+{
+	font-family: Aaux ProLight;
+}
+
+.numero-estadistica
+{
+	font-size: 120px;
+	display: flex;
+	align-items: center;
+	jusify-content: center;
+	font-family: Segoe UI Light;
+	color: #c0392b;
+}
+
+.cantidad-compra
+{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.icon-eye, .icon-shopping-cart, .icon-text, .icon-cog
+{
+	font-size: 20px;
+	color: black;
+}
+
+.icono-cuadro
+{
+	width: 40px;
+	height: 40px;
+	background: #bdc3c7;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.botones
+{
+	width: 210px;
+	display: flex;
+	flex-direction: row;
+	transition: all .2s ease-in-out;
+	padding-left: 100px;
+}
+
+.botones:hover
+{
+	transform: scale(1.2);
+}
+
+.mi-carrito
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+/*----------------------------------------------  CONTENIDOS - LISTADO CARRITO -------------------------------------------------*/
+
+
+.elementos-tabla
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+		
+	justify-content: center;
+
+}
+
+
+table 
+{     
+
+	font-family: Aaux ProLight;
+    font-size: 12px;    
+    margin: auto;
+    width: 950px; 
+    text-align: center;    
+    border: none;
+    
+}
+
+
+th, td, tr
+{
+	border: none;
+	
+}
+
+th
+{
+	font-size: 16px;
+	border-bottom: 3px solid #bdc3c7;
+	padding-bottom: 10px;
+	width: 100px;
+	color: #7f8c8d;
+	font-family: Segoe UI Light;
+}
+
+td
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 15px;
+	border-bottom: 1px solid #bdc3c7;
+}
+
+#articulo
+{
+	width: 150px;
+}
+
+.cantidad
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.numero-cantidad
+{
+	width: 70px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: rgba(189, 195, 199,.3);
+	box-shadow: none;
+
+}
+
+.flecha 
+{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+	padding-top: 10px;
+}
+
+.icon-chevron-thin-left 
+{
+
+	color: #ecf0f1;
+    font-size: 50px;	
+    text-decoration: none;
+}
+
+
+.boton-carrito
+{
+	margin-top: 40px;
+	width: 150px;
+	height: 40px;
+	background: #27ae60;
+	border-radius: 50px;
+	border: 2px solid #bdc3c7;
+	padding: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.boton-carrito:hover
+{
+	background: #2ecc71;
+	
+	transition: 0.6s linear ;
+}
+
+.boton-carrito a
+{
+	text-decoration: none;
+	color: #ecf0f1;
+	font-family: Aaux ProLight;
+	font-size: 18px;
+}
+
+.elementos-tabla-carrito
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+/*----------------------------------------------  CONTENIDOS - LISTADO ARTICULOS -------------------------------------------------*/
+
+.icon-documents, .icon-archive
+{
+
+	color: #ecf0f1;
+    font-size: 35px;	
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*----------------------------------------------  CONTENIDOS - MODIFICAR STOCK nuevo-------------------------------------------------*/
+
+#campos-registro-articulos
+{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 60%;
+	justify-content: center;
+	align-items: center;
+	font-family: Aaux ProLight;
+	color: #c0392b;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+
+.en-linea
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+/*----------------------------------------------  CONTENIDOS - MODIFICAR STOCK cambio-------------------------------------------------*/
+
+.tabla2
+{
+	width: 1000px;
+}
+
+.centrado
+{
+	margin: auto;
+	padding-left: 100px;
+}
+
+
+.enlace-tabla
+{
+	text-decoration: none;
+	color: #95a5a6;
+	margin-right: 15px;
+	font-size: 18px;
+}
+
+
+/*----------------------------------------------  CONTENIDOS - ESTADISTICAS --------------------------------------------------------*/
+
+.grafico
+{
+	z-index: 20;
+	
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	
+	align-items: center;
+}
+
+
+
+.estadisticas
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width:100%;
+	font-family: Aaux ProLight;
+}
+
+.graficos
+{
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+hr
+{
+	color: rgba(189, 195, 199,1.0);
+}
+
+
+.num
+{
+	top: 0px;
+	width: 100%;
+	height: 100px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.resaltar
+{
+	font-size: 35px;
+	color: rgba(192, 57, 43,1.0);
+}
+
+.calzados-cantidad, .indumentaria-cantidad, .accesorios-cantidad
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

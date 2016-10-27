@@ -1,0 +1,115 @@
+<div class="cont">
+
+					
+
+								<form action="index.php?action=Socio::modificar" method="post">
+								
+								<div>
+								<div id="datos">
+								<label class=""> Socio-CUIL: {cuil}  </label> <br>
+								<label class=""> Nombre: {nombre} </label> <br>
+								<label class=""> Apellido: {apellido} </label> <br>
+								<label class=""> SUSPENDIDO: {sus} </label> <br>
+								
+								<div class="boton-carrito">
+										<a href="#presta">+ NUEVO</a>
+										</div>
+
+								</div>
+
+
+								<div class="elementos-tabla">
+									
+				
+									<div id="tabla" class="tabla2 margen">
+										
+
+										<table border="0" cellpadding="0" cellspacing="0" class=”tabla”>
+										<tr>
+										
+											<th id="articulo">CUIL </td>
+											<th>FECHA DE PRESTAMO </td>
+											<th>FECHA DEVOLUCION </td>
+											<th>ISBN </td>
+											<th>TITULO </td>
+											
+							
+										</tr>
+										<!-- START BLOCK : blockLista -->
+										<tr>
+											<td>{cuil}</td>
+											<td>{prestamo}</td>
+											<td>{devolucion}</td>
+											<td>{libro1}</td>
+											<td>{titulo}</td>
+										
+							
+											
+										</tr>
+										<!-- END BLOCK : blockLista -->
+										<!-- START BLOCK : noResults -->
+
+										<td><p>No se registran prestamos pendientes.</p></td>
+										<!-- END BLOCK : noResults -->
+
+										</table>
+									</div>
+										
+										
+								</div>
+	
+								
+
+										<div class="boton-carrito">
+										<a href="index.php?action=Login::atras">VOLVER A INICIO</a>
+										</div>
+
+									
+
+								</form>
+
+
+
+
+
+</div>
+
+
+
+
+<div class="ventana-modal" id="presta">
+							<div class="opciones-cuadro-prestamo">
+						
+								<div class="verde"> <p class="blanco"> P R E S T A M O | Nuevo  </p></div>
+							<div id="centrado-verde">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Prestamo::consulta" method="post">
+							
+
+								<div>
+								<label class="label"> ISBN </label> <br>
+								<input type="number" name="isbn" placeholder="20357899878" title="Ingresa un <ISBN> valido, respeta la longitud de 13 caracteres." min="0" maxlength="13" required>
+								</div>
+
+								<div>
+								<label class="label"> Fecha del Prestamo </label> <br>
+								<input type="date" name="fecha" required title="Por favor, no olvides ingresar la fecha de prestamo." >
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Consultar" title="Verifica la disponibilidad del ejemplar!">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#close"><span class="icon-chevron-with-circle-left posicion2"></span></a>
+							</div>
+						</div>
+</div>
+								

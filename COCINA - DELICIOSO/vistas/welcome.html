@@ -1,0 +1,536 @@
+
+
+			<!-- C o n t e n i d o    M E N U-->
+			
+			<div class="opciones ">
+				<div class="ordenar  ">
+
+					<div class="animated slideInUp">
+					<div class="botones" >
+						<div class="icono-cuadro"><span class="icon-users"></span></div>
+						
+						<div class="ver mi-carrito" ><a onclick="index.php?action=Socio::contar" href="#ventana1" >CLIENTES</a></div>
+					</div>
+					<div class="botones">
+						<div class="icono-cuadro"><span class="icon-open-book"></span></div>
+						<div class="ver mi-carrito"><a href="#ventana2">COMIDAS</a></div>
+					</div>
+					<div class="botones">
+						<div class="icono-cuadro"><span class="icon-eye"></span></div>
+						<div class="ver mi-carrito"><a href="#ventana3">PEDIDOS</a></div>
+					</div>
+					<!--<div class="botones">
+						<div class="icono-cuadro"><span class="icon-cog"></span></div>
+						<div class="ver mi-carrito"><a href="#">CONFIGURACION</a></div>
+					</div>-->
+					<div class="botones">
+						<div class="icono-cuadro"><span class="icon-cog"></span></div>
+						<div class="ver mi-carrito"><a href="index.php?action=Login::cerrar">SALIR</a></div>
+					</div>
+					</div>
+					
+
+						<div id="imagenes">
+							
+                                <img src="" alt="">
+                            
+						</div>
+						
+						
+
+				</div>
+			</div>
+
+		
+			
+			<!-- C o n t e n i d o    V E N T A N A S  Modales -->
+
+				<div class="ventana-modal" id="ventana1">
+					<div class="opciones-cuadro">
+						
+								<div class="nombre "> <p> C L I E N T E S | Opciones</p></div>
+								<div class="categorias" >
+									<nav>
+									
+										<a href="#nuevo">Registrar</a>
+									
+									
+										<a href="#modificar">Modificar</a>
+									
+									
+										<a href="#suspender">Suspender</a>
+									
+									
+										<a href="#closed">Cerrar</a>
+									
+									</nav>
+								
+								</div>
+
+								<div class="datos">    <!-- datossssssssss -->
+									<div class="numeros">
+										<div class="cantidad-compra">
+											<div>
+											<div class="numero-estadistica">
+												<p class="fuente numero-estadistica">{sociosTotal}</p>
+											</div>
+											<div>
+												<p class="fuente">SOCIOS REGISTRADOS</p>
+											</div>
+											</div>
+
+
+											<div class="boton-carrito" style="margin-bottom:60px;">
+											<a target="_blank" href="index.php?action=Socio::listar">Ver</a>
+											</div>
+
+										</div>
+										<div class="cantidad-compra">
+											<div>
+											<div class="numero-estadistica">
+												<p class="fuente numero-estadistica">{sociosBaja}</p>
+											</div>
+											<div>
+												<p class="fuente">SOCIOS SUSPENDIDOS</p>
+											</div>
+											</div>
+
+											<div class="boton-carrito" style="margin-bottom:60px;">
+											<a target="_blank" href="index.php?action=Socio::listar2">Ver Suspendidos</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							
+							<div class="ventana-modal" id="nuevo">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> S O C I O S | Nuevo  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=socio::nuevo" method="post" >
+								<div>
+								<label class="label"> Nombre </label> <br>
+								<input type="text" name="nombre" placeholder="Juan" title="Ingresa solo un <nombre> y solo usa letras." pattern="^[a-zA-Z|\s]+$" maxlength="20" required>
+								</div>
+
+								<div>
+								<label class="label"> Apellido </label> <br>
+								<input type="text" name="apellido" placeholder="Gastein" title="Ingresa un <apellido> valido y solo usa letras." pattern="^[a-zA-Z|\s]+$" maxlength="20" required>
+								</div>
+
+								<div>
+								<label class="label"> CUIL </label> <br>
+								<input type="number" name="cuil" placeholder="20350001239" min="10000000000" max="99999999999" title="[AVISO] Ingresa un <CUIL> valido y respeta el formato de 11 numeros." required >
+								</div>
+
+								<div>
+								<label class="label"> Fecha Nacimiento </label> <br>
+								<input type="date" name="fecha" >
+								</div>
+
+								<div>
+								<label class="label"> Mail </label> <br>
+								<input type="text" name="mail" placeholder="example@example.com" title="Ingresa una direccion valida:  example@dominio.com !" required>
+								</div>
+
+								<div>
+								<label class="label"> Telefono fijo </label> <br>
+								<input type="number" name="fijo" min="0" placeholder="0383 4556687">
+								</div>
+
+								<div>
+								<label class="label"> Telefono movil </label> <br>
+								<input type="number" name="movil" min="0" placeholder="154000001" required>
+								</div>
+
+									<div>
+										<input id="add-socio" type="submit" value="Agregar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#ventana1"><span class="icon-chevron-with-circle-left"></span></a>
+							</div>
+						</div>
+						</div>
+						
+
+						
+						<div class="ventana-modal" id="modificar">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> S O C I O S | Modificar  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=socio::buscar" method="post">
+							
+
+								<div>
+								<label class="label"> Cuil </label> <br>
+								<input type="number" name="cuil" placeholder="20357899878" title="Ingresa un <cuil> valido, respeta la longitud de 11 caracteres." maxlength="12" required>
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#ventana1"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+						</div>
+						</div>
+
+
+
+						<div class="ventana-modal" id="suspender">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> S O C I O S | Suspender  </p></div>
+								<div class="mensaje">
+									<p>AVISO: Estas por realizar cambios sensibles en la informacion de un socio. Asegurate de verificar los datos que ingreses.</p>
+								</div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+
+
+								<form action="index.php?action=Socio::suspender" method="post">
+							
+								<div>
+								<label class="label"> Cuil </label> <br>
+								<input type="number" name="cuil" placeholder="20357899878" title="Ingresa un <cuil> valido, respeta la longitud de 11 caracteres." maxlength="11" required>
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+									<div style="height:50px;"></div>
+								<a href="#ventana1"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+
+						</div>
+						</div>
+						
+
+
+						</div>
+						
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="ventana-modal" id="ventana2">
+					<div class="opciones-cuadro" style="background: #f4f6e7;">
+						
+					<div class="nombre"> <p>L I B R O S | Opciones</p></div>
+								<div class="categorias" >
+									<nav>
+									
+										<a href="#nuevo-libro">Registrar</a>
+									
+									
+										<a href="#modificar-libro">Modificar</a>
+									
+									
+										<a href="#eliminar">Eliminar</a>
+									
+									
+										<a href="#closed">Cerrar</a>
+									
+									</nav>
+								
+								</div>
+
+								<div class="foco" style="overflow:hidden;">
+									<img src="recursos/9.png" width="500px" alt="">
+								</div>
+							
+						
+					</div>
+					
+					</div>
+
+
+
+					<div class="ventana-modal" id="nuevo-libro">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> L I B R O S | Nuevo  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Libro::nuevo" method="post">
+								<div>
+								<label class="label"> Titulo </label> <br>
+								<input type="text" name="titulo" placeholder="Fisica para Ingenieros" title="Ingrese un titulo y solo use letras." pattern="^[a-zA-Z|\s]+$" maxlength="50" required>
+								</div>
+
+								<div>
+								<label class="label"> Autor </label> <br>
+								<input type="text" name="autor" placeholder="Resnick" title="Ingresa un <autor> valido y solo usa letras." pattern="^[a-zA-Z|\s]+$" maxlength="20" required>
+								</div>
+
+								<div>
+								<label class="label"> A&ntilde;o edicion </label> <br>
+								<input type="number" name="anio" placeholder="2004" title="Ingresa un <año> valido, respeta la longitud de 4 caracteres." min="0"  maxlength="4" required>
+								</div>
+
+								<div>
+								<label class="label"> ISBN </label> <br>
+								<input type="number" name="isbn" placeholder="1234567891234" title="Ingresa solo numeros sin barras, en total deben ser 13 caracteres." min="1000000000000" max="9999999999999" required>
+								</div>
+
+							
+
+								<div>
+								<label class="label"> Editorial </label> <br>
+								<input type="text" name="editorial" maxlength="20" placeholder=" Grupo Editorial Patria">
+								</div>
+
+								<div>
+								<label class="label"> Cantidad paginas </label> <br>
+								<input type="number" name="paginas" placeholder="568" min="0" maxlength="4" required>
+								</div>
+
+								<div>
+								<label class="label"> Ejemplares </label> <br>
+								<input type="number" name="ejemplares" placeholder="1" min="0" maxlength="2" required>
+								</div>
+
+									<div>
+										<input id="add-socio" type="submit" value="+1  Agregar" name="nuevo" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#ventana2"><span class="icon-chevron-with-circle-left"></span></a>
+							</div>
+						</div>
+						</div>
+
+
+						<div class="ventana-modal" id="modificar-libro">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> L I B R O S | Modificar  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Libro::buscar" method="post">
+							
+
+								<div>
+								<label class="label"> ISBN </label> <br>
+								<input type="number" name="isbn" placeholder="1234567891234" title="Ingresa un <ISBN> valido, busca este numero en el libro." maxlength="13" required>
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#closed"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+						</div>
+						</div>
+
+
+						<div class="ventana-modal" id="eliminar">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco"> L I B R O S | Eliminar  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Libro::eliminar" method="post">
+							
+
+								<div>
+								<label class="label"> ISBN </label> <br>
+								<input type="number" name="isbn" placeholder="1234567891234" title="Ingresa un <ISBN> valido, busca este numero en el libro." maxlength="13" required>
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="#closed"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+						</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="ventana-modal" id="ventana3">
+					<div class="opciones-cuadro">
+						
+					<div class="nombre"> <p>P R E S T A M O S | Opciones</p></div>
+								<div class="categorias" >
+									<nav>
+									
+										<a href="#prestamo">Registrar</a>
+									
+									
+										<a target="_blank" href="index.php?action=Prestamo::listadopendientes">Listado</a>
+									
+									
+										<a href="#devolucion">Devolucion</a>
+									
+									
+										<a href="#closed">Cerrar</a>
+									
+									</nav>
+								
+								</div>
+							
+						
+					</div>
+					
+					</div>
+
+
+
+					<div class="ventana-modal" id="prestamo">
+					<div class="opciones-cuadro">
+						
+					<div class="nombre"> <p>P R E S T A M O S | Nuevo</p></div>
+							
+						<div id="socio-nuevo">
+							<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Prestamo::buscar" method="post">
+								<div style="height:50px;"></div>
+
+								<div>
+								<label class="label"> Cuil </label> <br>
+								<input type="number" name="cuil" placeholder="20357899878" title="Ingresa un <cuil> valido, respeta la longitud de 11 caracteres." min="0" maxlength="11" required>
+								</div>
+
+							
+
+									<div>
+										<input target="_blank" id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+
+								<a href="#closed"><span class="icon-chevron-with-circle-left posicion"></span></a>
+
+						</div>
+					</div>
+					
+					</div>
+
+
+
+
+					<div class="ventana-modal" id="devolucion">
+							<div class="opciones-cuadro fondo">
+						
+								<div class="nombre "> <p class="blanco">P R E S T A M O S | Devolucion  </p></div>
+								
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro" id="socio-nuevo-cuadro">
+
+
+
+								<form action="index.php?action=Prestamo::devolucion" method="post">
+							
+								<div>
+								<label class="label"> Cuil </label> <br>
+								<input type="number" name="cuil" placeholder="20357899878" title="Ingresa un <cuil> valido, respeta la longitud de 11 caracteres." min="0" maxlength="11" required>
+								</div>
+
+							
+
+									<div>
+										<input id="add-socio" type="submit" name="buscar" value="Aceptar" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+									<div style="height:50px;"></div>
+								<a href="#ventana3"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+
+						</div>
+						</div>
+					
+				
+
+		</div>

@@ -1,0 +1,60 @@
+<div class="modificar-cuadro">
+
+							<div class="opciones-cuadro centrado ">
+						
+								<div class="nombre "> <p class="blanco"> L I B R O S | Actualizar  </p></div>
+							<div id="socio-nuevo">
+								
+								<div class="socio-nuevo-cuadro orden" id="socio-nuevo-cuadro">
+
+								<form action="index.php?action=Libro::modificar" method="post">
+								
+								<div>
+								<label class="label"> Titulo </label> <br>
+								<input type="text" name="titulo" placeholder="Fisica para Ingenieros" title="Ingrese un titulo y solo use letras." pattern="^[a-zA-Z|\s]+$" value="{titulo}" required>
+								</div>
+
+								<div>
+								<label class="label"> Autor </label> <br>
+								<input type="text" name="autor" placeholder="Resnick" title="Ingresa un <autor> valido y solo usa letras." pattern="^[a-zA-Z|\s]+$" value="{autor}" required>
+								</div>
+
+								<div>
+								<label class="label"> A&ntilde;o edicion </label> <br>
+								<input type="number" name="anio" placeholder="2004" title="Ingresa un <año> valido, respeta la longitud de 4 caracteres." min="0" value="{anio}" required>
+								</div>
+
+								<div>
+								<label class="label"> ISBN </label> <br>
+								<input type="number" name="isbn" placeholder="1234567891234" title="Ingresa solo numeros sin barras, en total deben ser 13 caracteres." min="0" value="{isbn}" required>
+								</div>
+
+							
+
+								<div>
+								<label class="label"> Editorial </label> <br>
+								<input type="text" name="editorial" placeholder=" Grupo Editorial Patria" value="{editorial}">
+								</div>
+
+								<div>
+								<label class="label"> Cantidad paginas </label> <br>
+								<input type="number" name="paginas" placeholder="568" min="0" value="{paginas}" required>
+								</div>
+
+								<div>
+								<label class="label"> Ejemplares </label> <br>
+								<input type="number" name="ejemplares" placeholder="1" min="0" value="{ejemplares}" required>
+								</div>
+
+									<div>
+										<input id="add-socio" type="submit" value="Actualizar" name="nuevo" title="">
+									</div>
+
+								</form>
+
+								
+								</div>
+								<a href="index.php?action=Login::atras"><span class="icon-chevron-with-circle-left posicion"></span></a>
+							</div>
+						</div>
+</div>
